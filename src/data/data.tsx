@@ -25,7 +25,7 @@ import porfolioImage3 from '../images/portfolio/portfolio-3.jpg';
 // import porfolioImage9 from '../images/portfolio/portfolio-9.jpg';
 // import porfolioImage10 from '../images/portfolio/portfolio-10.jpg';
 // import porfolioImage11 from '../images/portfolio/portfolio-11.jpg';
-import profilepic from '../images/profilepic.jpg';
+import profilepic from '../images/avatar.jpeg';
 // import testimonialImage from '../images/testimonial.webp';
 import {
   About,
@@ -84,7 +84,7 @@ export const heroData: Hero = {
   ),
   actions: [
     {
-      href: '/assets/resume.pdf',
+      href: '/CV_LY_Oct-29-23.pdf',
       text: 'CV',
       primary: true,
       Icon: ArrowDownTrayIcon,
@@ -118,39 +118,43 @@ export const aboutData: About = {
  */
 export const skills: SkillGroup[] = [
   {
-    name: 'Spoken languages',
+    name: 'Programming languages',
     skills: [
       {
-        name: 'English',
+        name: 'Python',
         level: 10,
       },
       {
-        name: 'French',
-        level: 4,
+        name: 'Matlab',
+        level: 10,
       },
       {
-        name: 'Spanish',
-        level: 3,
-      },
-    ],
-  },
-  {
-    name: 'Frontend development',
-    skills: [
-      {
-        name: 'React',
-        level: 9,
-      },
-      {
-        name: 'Typescript',
+        name: 'R',
         level: 7,
       },
       {
-        name: 'GraphQL',
-        level: 6,
+        name: 'C++',
+        level: 7,
       },
     ],
   },
+  // {
+  //   name: '',
+  //   skills: [
+  //     {
+  //       name: 'React',
+  //       level: 9,
+  //     },
+  //     {
+  //       name: 'Typescript',
+  //       level: 7,
+  //     },
+  //     {
+  //       name: 'GraphQL',
+  //       level: 6,
+  //     },
+  //   ],
+  // },
   // {
   //   name: 'Backend development',
   //   skills: [
