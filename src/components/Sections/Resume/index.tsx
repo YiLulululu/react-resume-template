@@ -1,9 +1,9 @@
 import {FC, memo} from 'react';
 
-import {education, experience, jmp, publications, SectionId, skills,working_papers} from '../../../data/data';
+import {education, experience, jmp, publications, SectionId, working_papers} from '../../../data/data'; //skills,
 import Section from '../../Layout/Section';
 import ResumeSection from './ResumeSection';
-import {SkillGroup} from './Skills';
+// import {SkillGroup} from './Skills';
 import TimelineItem from './TimelineItem';
 
 const Resume: FC = memo(() => {
@@ -36,12 +36,17 @@ const Resume: FC = memo(() => {
           ))}
         </ResumeSection>
         <ResumeSection title="Skills">
-          {/* <p className="pb-8">Here you can show a snapshot of your skills to show off to employers</p> */}
-          <div className="grid grid-cols-1 gap-6 md:grid-cols-2">
+          <p className="pb-8">Programming: Python, Stata, C++, Matlab, R, Numpy, Pandas, PyTorch, VBA
+          <br></br>
+          Databases: BvD Orbis, Zephyr, S&P Compustat, SDC Platinum, Capital IQ, CRSP, Stepstone, Burgiss, Preqin
+          <br></br>
+          Applications: Bloomberg, WRDS, Github, LaTeX, Visual Studio, Dynare
+          </p>
+          {/* <div className="grid grid-cols-1 gap-6 md:grid-cols-2">
             {skills.map((skillgroup, index) => (
               <SkillGroup key={`${skillgroup.name}-${index}`} skillGroup={skillgroup} />
             ))}
-          </div>
+          </div> */}
         </ResumeSection>
       </div>
     </Section>
