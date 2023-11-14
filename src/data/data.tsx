@@ -203,7 +203,7 @@ export const portfolioItems: PortfolioItem[] = [
 /**
  * Resume section -- TODO: Standardize resume contact format or offer MDX
  */
-const link_color = { color: '#7BAFD4', textDecoration: 'underline'};
+const link_color = {color: '#7BAFD4', textDecoration: 'underline'};
 export const education: TimelineItem[] = [
   {
     date: 'Expected May 2024',
