@@ -35,6 +35,7 @@ import {
   Hero,
   HomepageMeta,
   PortfolioItem,
+  ReferenceItem,
   ResearchItem,
   SkillGroup,
   Social,
@@ -61,6 +62,7 @@ export const SectionId = {
   Research: 'research',
   Portfolio: 'projects',
   Resume: 'work',
+  Reference: 'references',
   Skills: 'skills',
   Stats: 'stats',  // Testimonials: 'testimonials',
   Teach: 'teaching',
@@ -402,6 +404,60 @@ export const ta: TimelineItem[] = [
   },
 ]
 
+export const reference: ReferenceItem[] = [
+  {
+    person: 'Prof. Anusha Chari (co-chair)',
+    title: 'Professor of Economics and Finance',
+    department: 'Department of Economics & Kenan-Flagler Business School',
+    location: 'UNC-Chapel Hill',
+    content: (
+      <p>
+        achari@unc.edu
+        <br></br>
+        <a href="https://econ.unc.edu/directory/achari/" style={link_color}>Home Page</a>
+      </p>
+    ),
+  },
+  {
+    person: 'Prof. Gregory W. Brown (co-chair)',
+    title: 'Weatherspoon Distinguished Professor of Finance',
+    department: 'Kenan-Flagler Business School',
+    location: 'UNC-Chapel Hill',
+    content: (
+      <p>
+        gregory_brown@kenan-flagler.unc.edu
+        <br></br>
+        <a href='https://kenaninstitute.unc.edu/people/greg-brown/' style={link_color}>Home Page</a>
+      </p>
+    ),
+  },
+  {
+    person: 'Prof. Christian T. Lundblad',
+    title: 'Richard Levin Distinguished Professor of Finance',
+    department: 'Kenan-Flagler Business School',
+    location: 'UNC-Chapel Hill',
+    content: (
+      <p>
+        lundblac@kenan-flagler.unc.edu
+        <br></br>
+        <a href='https://christianlundblad.web.unc.edu/' style={link_color}>Home Page</a>
+      </p>
+    ),
+  },
+  {
+    person: 'Prof. Boone Turchi',
+    title: 'Associate Professor of Economics',
+    department: 'Department of Economics',
+    location: 'UNC-Chapel Hill',
+    content: (
+      <p>
+        turchi@email.unc.edu
+        <br></br>
+        <a href="https://www.cpc.unc.edu/people/fellows/boone-a-turchi/" style={link_color}>Home Page</a>
+      </p>
+    ),
+  },
+]
 /**
  * Testimonial section
  */

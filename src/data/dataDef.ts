@@ -115,6 +115,17 @@ export interface ResearchItem {
 }
 
 /**
+ * Reference section
+ */
+export interface ReferenceItem {
+  person: string;
+  title: string;
+  department: string;
+  location: string;
+  content: JSX.Element;
+}
+
+/**
  * Testimonial section
  */
 export interface TestimonialSection {

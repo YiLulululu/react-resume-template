@@ -10,26 +10,6 @@ const Resume: FC = memo(() => {
   return (
     <Section className="bg-neutral-100 pt-6 md:pt-8 pb-6 md:pb-8" sectionId={SectionId.Resume}>
       <div className="flex flex-col divide-y-2 divide-neutral-300 border-b-2 border-neutral-300">
-        {/* <ResumeSection title="Education">
-          {education.map((item, index) => (
-            <TimelineItem item={item} key={`${item.title}-${index}`} />
-          ))}
-        </ResumeSection> */}
-        {/* <ResumeSection title="Jor Market Paper">
-          {jmp.map((item, index) => (
-            <TimelineItem item={item} key={`${item.title}-${index}`} />
-          ))}
-        </ResumeSection>
-        <ResumeSection title="Publications">
-          {publications.map((item, index) => (
-            <TimelineItem item={item} key={`${item.title}-${index}`} />
-          ))}
-        </ResumeSection>
-        <ResumeSection title="Working Papers">
-          {working_papers.map((item, index) => (
-            <TimelineItem item={item} key={`${item.title}-${index}`} />
-          ))}
-        </ResumeSection> */}
         <ResumeSection title="Work Experience">
           {experience.map((item, index) => (
             <TimelineItem item={item} key={`${item.title}-${index}`} />

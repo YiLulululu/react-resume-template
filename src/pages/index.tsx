@@ -8,6 +8,7 @@ import Education from '../components/Sections/Education';
 import Footer from '../components/Sections/Footer';
 import Hero from '../components/Sections/Hero';
 import Portfolio from '../components/Sections/Portfolio';
+import Reference from '../components/Sections/Reference';
 import Research from '../components/Sections/Research';
 import Resume from '../components/Sections/Resume';
 import Teach from '../components/Sections/Teach';
@@ -28,6 +29,7 @@ const Home: FC = memo(() => {
       <Research />
       <Resume />
       <Teach />
+      <Reference />
       <Portfolio /> {/* <Testimonials /> */}
       <Contact />
       <Footer />
