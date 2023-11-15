@@ -31,6 +31,7 @@ import {
   About,
   ContactSection,
   ContactType,
+  EducationItem,
   Hero,
   HomepageMeta,
   PortfolioItem,
@@ -55,6 +56,7 @@ export const SectionId = {
   Hero: 'hero',
   About: 'about',
   Contact: 'contact',
+  Education: 'education',
   Portfolio: 'Projects',
   Resume: 'CV',
   Skills: 'skills',
@@ -131,37 +133,8 @@ export const skills: SkillGroup[] = [
         name: 'Python',
         level: 10,
       },
-      {
-        name: 'Matlab',
-        level: 10,
-      },
-      {
-        name: 'R',
-        level: 7,
-      },
-      {
-        name: 'C++',
-        level: 7,
-      },
     ],
   },
-  // {
-  //   name: '',
-  //   skills: [
-  //     {
-  //       name: 'React',
-  //       level: 9,
-  //     },
-  //     {
-  //       name: 'Typescript',
-  //       level: 7,
-  //     },
-  //     {
-  //       name: 'GraphQL',
-  //       level: 6,
-  //     },
-  //   ],
-  // },
 ];
 
 /**
@@ -207,13 +180,13 @@ export const portfolioItems: PortfolioItem[] = [
 ];
 
 /**
- * Resume section -- TODO: Standardize resume contact format or offer MDX
+ * Education section
  */
 const link_color = {color: '#7BAFD4', textDecoration: 'underline'};
-export const education: TimelineItem[] = [
+export const education: EducationItem[] = [
   {
     date: 'Expected May 2024',
-    location: 'University of North Carolina at Chapel Hill',
+    university: 'University of North Carolina at Chapel Hill',
     title: 'PhD, Economics',
     content: <p>
       Chairs of the Comittee: <a href='https://econ.unc.edu/directory/achari/' style={link_color}>Anusha Chari</a> and <a href='https://kenaninstitute.unc.edu/people/greg-brown/' style={link_color}>Gregory Brown</a>
@@ -223,7 +196,7 @@ export const education: TimelineItem[] = [
   },
   {
     date: '2018',
-    location: 'Simon Fraser University',
+    university: 'Simon Fraser University',
     title: 'MSc, Statistics and Actuarial Science',
     content: <p>
       Supervisors: <a href='https://www.sfu.ca/~bsanders/' style={link_color}>Barbara Sanders</a> and <a href='https://www.sfu.ca/~jbegin/' style={link_color}>Jean-François Bégin</a>
@@ -233,11 +206,43 @@ export const education: TimelineItem[] = [
   },
   {
     date: '2015',
-    location: 'Simon Fraser University',
+    university: 'Simon Fraser University',
     title: 'BSc, Statistics and Actuarial Science',
     content: <p>Bachelor's degree in science, major in actuarial science.</p>,
   },
 ];
+
+/**
+ * Resume section -- TODO: Standardize resume contact format or offer MDX
+ */
+// export const education: TimelineItem[] = [
+//   {
+//     date: 'Expected May 2024',
+//     location: 'University of North Carolina at Chapel Hill',
+//     title: 'PhD, Economics',
+//     content: <p>
+//       Chairs of the Comittee: <a href='https://econ.unc.edu/directory/achari/' style={link_color}>Anusha Chari</a> and <a href='https://kenaninstitute.unc.edu/people/greg-brown/' style={link_color}>Gregory Brown</a>
+//       <br></br>
+//       Dissertation: The Evolution of Equity Ownership: Declining IPOs, the Rise of Private Markets, and Economic Dynamism.
+//       </p>,
+//   },
+//   {
+//     date: '2018',
+//     location: 'Simon Fraser University',
+//     title: 'MSc, Statistics and Actuarial Science',
+//     content: <p>
+//       Supervisors: <a href='https://www.sfu.ca/~bsanders/' style={link_color}>Barbara Sanders</a> and <a href='https://www.sfu.ca/~jbegin/' style={link_color}>Jean-François Bégin</a>
+//       <br></br>
+//       Thesis: <a href='https://www.netspar.nl//assets/uploads/P20180620_MSc19_Lu-yi.pdf'>Quantifying Inter-generational Equity under Different Target Benefit Plan Designs</a>.
+//       </p>,
+//   },
+//   {
+//     date: '2015',
+//     location: 'Simon Fraser University',
+//     title: 'BSc, Statistics and Actuarial Science',
+//     content: <p>Bachelor's degree in science, major in actuarial science.</p>,
+//   },
+// ];
 
 export const jmp: TimelineItem[] = [
   {

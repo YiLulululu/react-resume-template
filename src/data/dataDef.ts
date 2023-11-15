@@ -94,6 +94,16 @@ export interface TimelineItem {
 }
 
 /**
+ * Education section
+ */
+export interface EducationItem {
+  date: string;
+  university: string;
+  title: string;
+  content: JSX.Element;
+}
+
+/**
  * Testimonial section
  */
 export interface TestimonialSection {
