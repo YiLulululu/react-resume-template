@@ -10,6 +10,7 @@ import Hero from '../components/Sections/Hero';
 import Portfolio from '../components/Sections/Portfolio';
 import Research from '../components/Sections/Research';
 import Resume from '../components/Sections/Resume';
+import Teach from '../components/Sections/Teach';
 // import Testimonials from '../components/Sections/Testimonials';
 import {homePageMeta} from '../data/data';
 
@@ -26,6 +27,7 @@ const Home: FC = memo(() => {
       <Education />
       <Research />
       <Resume />
+      <Teach />
       <Portfolio /> {/* <Testimonials /> */}
       <Contact />
       <Footer />

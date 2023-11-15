@@ -63,6 +63,7 @@ export const SectionId = {
   Resume: 'work',
   Skills: 'skills',
   Stats: 'stats',  // Testimonials: 'testimonials',
+  Teach: 'teaching',
 } as const;
 
 export type SectionId = (typeof SectionId)[keyof typeof SectionId];
@@ -215,7 +216,7 @@ export const education: EducationItem[] = [
 ];
 
 /**
- * Resume section -- TODO: Standardize resume contact format or offer MDX
+ * Research section
  */
 export const jmp: ResearchItem[] = [
   {
@@ -357,6 +358,49 @@ export const experience: TimelineItem[] = [
   },
 
 ];
+
+export const ta: TimelineItem[] = [
+  {
+    date: 'Fall 2022 and Fall 2023',
+    location: 'Kenan-Flagler Business School',
+    title: 'Teaching Assistant',
+    content: (
+      <p>
+        MBA 792 - Investments (EMBA)
+      </p>
+    ),
+  },
+  {
+    date: 'Fall 2019 - Fall 2021',
+    location: 'Department of Economics',
+    title: 'Recitation Instructor/Teaching Assistant',
+    content: (
+      <p>
+        Econ 101 - Principles of Economics (Vijay Bhagavan Award)
+        <br></br>
+        Econ 400 - Introduction to Statistics and Econometrics
+        <br></br>
+        Econ 486 - Gender and Economics
+        <br></br>
+        Econ 490 - Exploring the Economics of Global Pandemics
+      </p>
+    ),
+  },
+  {
+    date: 'Fall 2015 - Spring 2018',
+    location: 'Department of Statistics and Actuarial Science',
+    title: 'Teaching Assistant',
+    content: (
+      <p>
+        ACMA 301 - Long-Term Actuarial Mathematics I
+        <br></br>
+        ACMA 401 - Long-Term Actuarial Mathematics II
+        <br></br>
+        Statistics Workshop
+      </p>
+    ),
+  },
+]
 
 /**
  * Testimonial section
