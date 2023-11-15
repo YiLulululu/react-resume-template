@@ -35,6 +35,7 @@ import {
   Hero,
   HomepageMeta,
   PortfolioItem,
+  ResearchItem,
   SkillGroup,
   Social,
   // TestimonialSection,
@@ -57,8 +58,9 @@ export const SectionId = {
   About: 'about',
   Contact: 'contact',
   Education: 'education',
-  Portfolio: 'Projects',
-  Resume: 'CV',
+  Research: 'research',
+  Portfolio: 'projects',
+  Resume: 'work',
   Skills: 'skills',
   Stats: 'stats',  // Testimonials: 'testimonials',
 } as const;
@@ -215,40 +217,12 @@ export const education: EducationItem[] = [
 /**
  * Resume section -- TODO: Standardize resume contact format or offer MDX
  */
-// export const education: TimelineItem[] = [
-//   {
-//     date: 'Expected May 2024',
-//     location: 'University of North Carolina at Chapel Hill',
-//     title: 'PhD, Economics',
-//     content: <p>
-//       Chairs of the Comittee: <a href='https://econ.unc.edu/directory/achari/' style={link_color}>Anusha Chari</a> and <a href='https://kenaninstitute.unc.edu/people/greg-brown/' style={link_color}>Gregory Brown</a>
-//       <br></br>
-//       Dissertation: The Evolution of Equity Ownership: Declining IPOs, the Rise of Private Markets, and Economic Dynamism.
-//       </p>,
-//   },
-//   {
-//     date: '2018',
-//     location: 'Simon Fraser University',
-//     title: 'MSc, Statistics and Actuarial Science',
-//     content: <p>
-//       Supervisors: <a href='https://www.sfu.ca/~bsanders/' style={link_color}>Barbara Sanders</a> and <a href='https://www.sfu.ca/~jbegin/' style={link_color}>Jean-François Bégin</a>
-//       <br></br>
-//       Thesis: <a href='https://www.netspar.nl//assets/uploads/P20180620_MSc19_Lu-yi.pdf'>Quantifying Inter-generational Equity under Different Target Benefit Plan Designs</a>.
-//       </p>,
-//   },
-//   {
-//     date: '2015',
-//     location: 'Simon Fraser University',
-//     title: 'BSc, Statistics and Actuarial Science',
-//     content: <p>Bachelor's degree in science, major in actuarial science.</p>,
-//   },
-// ];
-
-export const jmp: TimelineItem[] = [
+export const jmp: ResearchItem[] = [
   {
-    date: 'Job Market Paper (2023)',
-    location: 'Lu Yi',
     title: 'The Evolution of Equity Ownership: Declining IPOs, the Rise of Private Markets, and Economic Dynamism',
+    authors: 'Lu Yi',
+    journal: 'Job Market Paper',
+    date: '2023',  
     content: (
       <p>
         <strong>Abstract</strong>: Since the early 2000s, many advanced economies have seen a decline in initial public offerings (IPOs) of stock and, consequently, the count of publicly-traded companies. The drop in IPOs has raised pressing questions: Is there a decline in transformative new firms and has our financial system become less supportive of them? A primary barrier to understanding these patterns is the scarcity of data on private firms. To bridge this gap, I compile a comprehensive dataset tracking the financial characteristics and ownership structure for both public and private firms in the United Kingdom (UK) throughout their lifespan. I find that a decreasing population of young firms, a trend underscored in economic dynamism literature, accounts for around 25% of the IPO reduction in the UK since its 2007 peak. Yet, this is just one facet of a broader trend. I confirm anecdotal evidence that an increasing proportion of high-growth young firms are turning to private external funding sources, such as venture capital and other private equity (PE) funds. This implies that the outlook for transformational startups is not as pessimistic as the declining trend in IPOs suggests. Furthermore, I highlight the pronounced role of mergers and acquisitions (M&A), particularly an uptick in cross-border M&A as an ownership transition for private firms. Finally, I show that this more complex view of how equity ownership evolves is integral to understanding trends in economic dynamism.
@@ -259,11 +233,12 @@ export const jmp: TimelineItem[] = [
   },
 ]
 
-export const publications: TimelineItem[] = [
+export const publications: ResearchItem[] = [
   {
-    date: 'Journal of Pension Economics and Finance (2022)',
-    location: 'with Barbara Sanders, Jean-François Bégin',
     title: 'Redistribution in Modern Occupational Pension Plans: Hidden Versus Explicit Risk Transactions',
+    authors: 'with Barbara Sanders, Jean-François Bégin',
+    journal: 'Journal of Pension Economics and Finance',
+    date: '2022',
     content: (
       <p>
         <strong><a href='https://www.cambridge.org/core/journals/journal-of-pension-economics-and-finance/article/abs/redistribution-in-collective-pension-arrangements-without-a-sponsor-guarantee-hidden-versus-explicit-risk-transactions/34C472A63DBDCC177EE153EA983CF992' style={link_color}>Paper Link</a></strong>
@@ -272,11 +247,12 @@ export const publications: TimelineItem[] = [
   },
 ]
 
-export const working_papers: TimelineItem[] = [
+export const working_papers: ResearchItem[] = [
   {
-    date: 'UNC Institute for Private Capital working paper (2023)',
-    location: 'with Gregory Brown',
     title: 'How Do Private Equity Firms Create Value?',
+    authors: 'with Gregory Brown',
+    journal: 'UNC Institute for Private Capital working paper',
+    date: '2023',
     content: (
       <p>
         <strong><a href='/How_do_private_equity_firms_create_value_.pdf' style={link_color}>Paper Download</a></strong>
@@ -284,9 +260,10 @@ export const working_papers: TimelineItem[] = [
     ),
   },
   {
-    date: 'UNC Kenan Institute of Private Enterprise working paper (2022)',
-    location: 'with Matteo Binfare, Gregory Brown, Andra Ghent, Wendy Hu, Christian Lundblad, Richard Maxwell, and Shawn Munday',
     title: 'Performance Analysis and Attribution with Alternative Investments',
+    authors: 'with Matteo Binfare, Gregory Brown, Andra Ghent, Wendy Hu, Christian Lundblad, Richard Maxwell, and Shawn Munday',
+    journal: 'UNC Kenan Institute of Private Enterprise working paper',
+    date: '2022',
     content: (
       <p>
         <strong><a href='https://uncipc.com/wp-content/uploads/2022/02/IPC-Performance-Attribution-Analysis-v2022-02-12.pdf' style={link_color}>Paper Link</a></strong>
@@ -294,9 +271,10 @@ export const working_papers: TimelineItem[] = [
     ),
   },
   {
-    date: 'UNC Kenan Institute of Private Enterprise working paper (2022)',
-    location: 'with Gregory Brown, Michael Chow, and David Fisher',
     title: 'Employment Dynamics at Venture-Backed Companies Between 1990 and 2020',
+    authors: 'with Gregory Brown, Michael Chow, and David Fisher',
+    journal: 'UNC Kenan Institute of Private Enterprise working paper',
+    date: '2022',
     content: (
       <p>
         <strong><a href='https://nvca.org/wp-content/uploads/2022/02/Employment-Dynamics-at-Venture-Backed-Companies_FINAL.pdf' style={link_color}>Paper Link</a></strong>
@@ -304,9 +282,10 @@ export const working_papers: TimelineItem[] = [
     ),
   },
   {
-    date: 'UNC Kenan Institute of Private Enterprise working paper (2020)',
-    location: 'with Gregory Brown and Eric Ghysels',
     title: 'Estimating Undetected COVID-19 Infections',
+    authors: 'with Gregory Brown and Eric Ghysels',
+    journal: 'UNC Kenan Institute of Private Enterprise working paper',
+    date: '2020',
     content: (
       <p>
         <strong><a href='https://kenaninstitute.unc.edu/wp-content/uploads/2020/08/Unobserved_COVID_Infection.pdf' style={link_color}>Paper Link</a></strong>
@@ -314,9 +293,10 @@ export const working_papers: TimelineItem[] = [
     ),
   },
   {
-    date: 'Work in progress (2023)',
-    location: 'with Anusha Chari, Christian Lundblad, and Karlye Stedman',
     title: 'U.S. Monetary Policy and the Deviations from Covered Interest Parity',
+    authors: 'with Anusha Chari, Christian Lundblad, and Karlye Stedman',
+    journal: 'Work in progress',
+    date: '2023',
     content: (
       <p>
       

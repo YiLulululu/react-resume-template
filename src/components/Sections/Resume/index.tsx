@@ -1,6 +1,6 @@
 import {FC, memo} from 'react';
 
-import {experience, jmp, publications, SectionId, working_papers} from '../../../data/data'; //education,  skills,
+import {experience, SectionId} from '../../../data/data'; //education,  skills,
 import Section from '../../Layout/Section';
 import ResumeSection from './ResumeSection';
 // import {SkillGroup} from './Skills';
@@ -15,7 +15,7 @@ const Resume: FC = memo(() => {
             <TimelineItem item={item} key={`${item.title}-${index}`} />
           ))}
         </ResumeSection> */}
-        <ResumeSection title="Jor Market Paper">
+        {/* <ResumeSection title="Jor Market Paper">
           {jmp.map((item, index) => (
             <TimelineItem item={item} key={`${item.title}-${index}`} />
           ))}
@@ -29,8 +29,8 @@ const Resume: FC = memo(() => {
           {working_papers.map((item, index) => (
             <TimelineItem item={item} key={`${item.title}-${index}`} />
           ))}
-        </ResumeSection>
-        <ResumeSection title="Experiences">
+        </ResumeSection> */}
+        <ResumeSection title="Work Experience">
           {experience.map((item, index) => (
             <TimelineItem item={item} key={`${item.title}-${index}`} />
           ))}

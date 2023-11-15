@@ -104,6 +104,17 @@ export interface EducationItem {
 }
 
 /**
+ * Research section
+ */
+export interface ResearchItem {
+  title: string;
+  authors: string;
+  journal: string;
+  date: string;
+  content: JSX.Element;
+}
+
+/**
  * Testimonial section
  */
 export interface TestimonialSection {
