@@ -99,7 +99,7 @@ export const heroData: Hero = {
       Icon: ArrowDownTrayIcon,
     },
     {
-      href: '/Lu_JMP_final_v2.pdf',
+      href: '/Lu_JMP_final_v3.pdf',
       text: 'Job Market Paper',
       primary: false,
       Icon: ArrowDownTrayIcon,
@@ -231,7 +231,7 @@ export const jmp: ResearchItem[] = [
       <p>
         <strong>Abstract</strong>: Since the early 2000s, many advanced economies have seen a decline in initial public offerings (IPOs) of stock and, consequently, the count of publicly-traded companies. The drop in IPOs has raised pressing questions: Is there a decline in transformative new firms and has our financial system become less supportive of them? A primary barrier to understanding these patterns is the scarcity of data on private firms. To bridge this gap, I compile a comprehensive dataset tracking the financial characteristics and ownership structure for both public and private firms in the United Kingdom (UK) throughout their lifespan. I find that a decreasing population of young firms, a trend underscored in economic dynamism literature, accounts for around 25% of the IPO reduction in the UK since its 2007 peak. Yet, this is just one facet of a broader trend. I confirm anecdotal evidence that an increasing proportion of high-growth young firms are turning to private external funding sources, such as venture capital and other private equity (PE) funds. This implies that the outlook for transformational startups is not as pessimistic as the declining trend in IPOs suggests. Furthermore, I highlight the pronounced role of mergers and acquisitions (M&A), particularly an uptick in cross-border M&A as an ownership transition for private firms. Finally, I show that this more complex view of how equity ownership evolves is integral to understanding trends in economic dynamism.
         <br></br><br></br>
-        <strong><a href='/Lu_JMP_final_v2.pdf' style={link_color}>Paper Download</a></strong>
+        <strong><a href='/Lu_JMP_final_v3.pdf' style={link_color}>Paper Download</a></strong>
       </p>
     ),
   },
@@ -292,7 +292,7 @@ export const working_papers: ResearchItem[] = [
     date: '2020',
     content: (
       <p>
-        <strong><a href='https://kenaninstitute.unc.edu/wp-content/uploads/2020/08/Unobserved_COVID_Infection.pdf' style={link_color}>Paper Link</a></strong>
+        <strong><a href='/Covid_paper.pdf' style={link_color}>Paper Link</a></strong>
       </p>
     ),
   },
