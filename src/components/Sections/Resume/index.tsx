@@ -28,6 +28,32 @@ const Resume: FC = memo(() => {
             ))}
           </div> */}
         </ResumeSection>
+        <ResumeSection title="Awards">
+          <p className="pb-8">
+          Vijay Bhagavan Award for Outstanding Economics 101 Teaching Assistant, 2020
+          <br></br>
+          Netspar MS Thesis Award, Network for Studies on Pensions, Aging & Retirement, 2019
+          <br></br>
+          Undergraduate Open Scholarship, Simon Fraser University, 4 times, 2013-2015
+          <br></br>
+          Statistics and Actuarial Science Endowment Award, Simon Fraser University, 2014
+          <br></br>
+          President’s/Dean's Honor Roll, Simon Fraser University, 4 times, 2013-2014
+          <br></br>
+          <br></br>
+          Postgraduate Scholarships (PGS-D3) from NSERC, 2019–2022
+          <br></br>
+          Doctoral Merit Assistantship from University of North Carolina at Chapel Hill, 2018
+          <br></br>
+          GSS Professional Development Grant from Simon Fraser University, 2018
+          <br></br>
+          Graduate Fellowship from Simon Fraser University, 2017-2018
+          <br></br>
+          Chair’s Travel Grant from Simon Fraser University, 2017–2018
+          <br></br>
+          Entrance scholarship from Simon Fraser University, 2012
+          </p>
+        </ResumeSection>
       </div>
     </Section>
   );
